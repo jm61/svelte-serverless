@@ -1,0 +1,17 @@
+GET https://serverless-basic-api.netlify.app/api/1-hello
+###
+
+POST https://serverless-basic-api.netlify.app/api/5-weather
+content-type: application/json
+
+{
+    "city": "davao"
+}
+###
+POST https://localhost:8888/api/hello
+content-type: application/json
+
+{
+    "city": "davao"
+}
+###
