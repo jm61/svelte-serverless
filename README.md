@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f9a5c483-2e51-497a-af96-d91675f79404/deploy-status)](https://app.netlify.com/sites/svlete-sl-func/deploys)
