@@ -1,17 +1,25 @@
-GET https://serverless-basic-api.netlify.app/api/1-hello
+GET https://svlete-sl-func.netlify.app//api/animals/barksalot
 ###
 
-POST https://serverless-basic-api.netlify.app/api/5-weather
+POST https://svlete-sl-func.netlify.app/api/weather
 content-type: application/json
 
 {
     "city": "davao"
 }
 ###
-POST https://localhost:8888/api/hello
+POST https://svlete-sl-func.netlify.app/api/dns
 content-type: application/json
 
 {
-    "city": "davao"
+    "hostname": "www.intel.com"
+}
+###
+POST https://svlete-sl-func.netlify.app/api/topsecret
+content-type: application/json
+
+{
+    "username": "johndoe",
+    "password": "qwerty"
 }
 ###
