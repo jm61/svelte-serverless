@@ -3,6 +3,7 @@ const input = document.querySelector('.form-input')
 const dns = document.querySelector('#dns')
 const alert = document.querySelector('.alert')
 const result = document.querySelector('.result')
+const mongo = document.querySelector('#mongo')
 alert.style.display = 'block'
 
 form.addEventListener('submit', e => {
@@ -15,6 +16,26 @@ form.addEventListener('submit', e => {
         getAddress(hostname)
     }
 })
+
+mongo.addEventListener('submit', e => {
+    e.preventDefault()
+    getMongoUsers()
+})
+
+async function getMongoUsers() {
+    try {
+        const {data} = await axios.get('/api/mongodb')
+        const users = data.map((user) => {
+            const {email,username} = user
+            return `<div class=info><h5>Password: ${email}</h5>
+            <h5 class="price">Username: ${username}</h5>
+            </div>`
+        }).join('')
+        result.innerHTML = users
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 async function getWeatherData(city) {
     alert.style.display = 'none'

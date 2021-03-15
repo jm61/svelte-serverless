@@ -134,7 +134,7 @@ p {
 
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 .section-center {
   width: 90vw;
@@ -153,7 +153,7 @@ Navbar
 ===============
 */
 .nav {
-  height: 5rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
